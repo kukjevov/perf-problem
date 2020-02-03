@@ -33,7 +33,6 @@
         "scss": "gulp compile-scss",
         "tsc": "tsc",
         "ngc": "ngc",
-        "postinstall": "npm run build:prepare:dev && npm run build",
         "server": "node server.js",
         "server:doc": "concurrently \"npm run app-help:w\" \"npm run server -- --browsersync\"",
         "start": "npm run build:gulp && concurrently \"npm run app-config:w\" \"npm run server -- --webpack\"",
