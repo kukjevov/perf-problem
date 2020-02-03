@@ -1,0 +1,14 @@
+.idea/
+node_modules/
+wwwroot/
+app.aot/
+build/
+testResults/
+packages/
+package-lock.json
+*.log
+*.bak
+*.orig
+*.pdf
+*.swp
+*~

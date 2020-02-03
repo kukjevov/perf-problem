@@ -1,0 +1,54 @@
+.kontroly-component
+{
+    tree-node
+    {
+        $invalid: #EC0E0E;
+        $valid: #6ABA4F;
+
+        .valid-false
+        {
+            fill: $invalid;
+            transition: all 500ms;
+
+            &.circle
+            {
+                stroke-width: 2;
+                stroke: $invalid;
+            }
+        }
+
+        .valid-true
+        {
+            fill: $valid;
+            transition: all 500ms;
+
+            &.circle
+            {
+                stroke-width: 2;
+                stroke: $valid;
+            }
+        }
+
+        .valid-false, .valid-true
+        {
+            &.invert
+            {
+                fill: #FFFFFF;
+            }
+        }
+
+        .line-thick
+        {
+            fill: none;
+            stroke-width: 2px;
+            stroke: #666666;
+        }
+    }
+
+    .kontrola-line
+    {
+        display: grid;
+        grid-template-columns: auto 1fr 60%;
+        grid-template-rows: auto;
+    }
+}

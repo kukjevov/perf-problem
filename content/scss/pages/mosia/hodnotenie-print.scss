@@ -1,0 +1,71 @@
+hodnotenie-pzs-tlac-view.print
+{
+    padding-top: $pageMdWidth;
+
+    .hlavne-ukazovatele
+    {
+        hlavny-ukazovatel
+        {
+            .hu-icon
+            {
+                @media print
+                {
+                    background-size: 42px !important;
+                    background-repeat: no-repeat !important;
+                    background-position: center !important;
+
+                    &.liek
+                    {
+                        background-image: url('./images/capsules.png') !important;
+                    }
+    
+                    &.eura
+                    {
+                        background-image: url('./images/dbEuro.png') !important;
+                    }
+    
+                    &.lab
+                    {
+                        background-image: url('./images/flask.png') !important;
+                    }
+    
+                    &.refferal
+                    {
+                        background-image: url('./images/persons.png') !important;
+                    }
+                }
+            }
+
+            .hu-chart
+            {
+                &>hlavny-ukazovatel-chart
+                {
+                    &>div
+                    {
+                        @media print
+                        {
+                            background-color: #DDDDDD !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    tabulka-view
+    {
+        tabulka-riadok-view:nth-of-type(2n+0)
+        {
+            .ppoc, .purc, .phist, .psipka, .pref, .pvaha,
+            .upoc, .uurc, .uhist, .usipka, .uref, .uvaha,
+            .npoc, .nurc, .nhist, .nsipka, .nref, .nvaha,
+            .zakurc
+            {
+                @media print
+                {
+                    background-color: #EAEAEA !important;
+                }
+            }
+        }
+    }
+}

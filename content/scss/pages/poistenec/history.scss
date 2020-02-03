@@ -1,0 +1,63 @@
+.history
+{
+    .date-filter-input
+    {
+        width: 70px;
+        padding: 0 3px;
+        border-radius: 4px;
+        background-color: lighten($semiDarkBackgroundColor, 7.5%);
+        border: none;
+        line-height: 18px;
+        cursor: pointer;
+        color: $lightText;
+    }
+
+    .line-height-18
+    {
+        line-height: 18px;
+    }
+
+    .patient-selection
+    {
+        border: 0;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        height: 26px;
+        background-color: $semiDarkBackgroundColor;
+        color: $semiLightText;
+    }
+
+    .active-case
+    {
+        border: 3px solid #FFB73B;
+    }
+
+    .prihody
+    {
+        overflow-y: auto;
+        height: calc(100vh - 340px);
+    }
+
+    .spravy
+    {
+        height: 150px;
+        position: relative;
+
+        &>div
+        {
+            overflow-y: auto;
+            height: 126px;
+        }
+    }
+
+    .produkty
+    {
+        height: calc(100vh - 113px);
+        overflow-y: auto;
+
+        .produkt-vaha
+        {
+            width: 28px;
+        }
+    }
+}

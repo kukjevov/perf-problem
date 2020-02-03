@@ -1,0 +1,9 @@
+{
+    "debug": false,
+    "apiBaseUrl": "api/",
+    "defaultApiHeaders": 
+    {
+        "Accept": "application/json"
+    },
+    "theme": "dark"
+}

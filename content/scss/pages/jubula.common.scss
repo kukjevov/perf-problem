@@ -1,0 +1,827 @@
+.druh-ulohy-col
+{
+    min-width: 48px;
+}
+
+.nemocnica-col
+{
+    min-width: 85px;
+}
+
+.poistenec-col
+{
+    min-width: 85px;
+}
+
+// .component-block
+// {
+//     margin: -20px;
+//     background-color: $semiDarkBackgroundColor;
+//     border-radius: 4px;
+//     font-family: "SegoeUI";
+//     color: $lightText;
+
+//     .semi-dark-text
+//     {
+//         color: $semiDarkText;
+//     }
+
+//     .margin-top-sm
+//     {
+//         margin-top: $tytoSmWidth;
+//     }
+
+//     .margin-top-md
+//     {
+//         margin-top: $tytoMdWidth;
+//     }
+
+//     .margin-right-xs
+//     {
+//         margin-right: $tytoXsWidth;
+//     }
+
+//     .margin-right-md
+//     {
+//         margin-right: $tytoMdWidth;
+//     }
+
+//     .margin-right-sm
+//     {
+//         margin-right: $tytoSmWidth;
+//     }
+
+//     .margin-bottom-xs
+//     {
+//         margin-bottom: $tytoXsWidth;
+//     }
+//     .margin-bottom-sm
+//     {
+//         margin-bottom: $tytoSmWidth;
+//     }
+
+//     .margin-left-xs
+//     {
+//         margin-left: $tytoXsWidth;
+//     }
+
+
+//     .deleted 
+//     {
+//         background-color: $redTag;
+//         position: relative;
+//         white-space: nowrap; /* would center line-through in the middle of the wrapped lines */
+//     }
+
+//     .deleted:after 
+//     {
+//         border-top: 1px solid $blackText;
+//         position: absolute;
+//         content: "";
+//         right: 0;
+//         top:50%;
+//         left: 0;
+//     }
+
+//     .gui
+//     {
+//         background-color: $blueTag;
+//     }
+
+//     .used
+//     {
+//         font-weight: bold;
+//     }
+
+//     .grey
+//     {
+//         background-color: $lighterBackgroundColor;
+//     }
+
+//     .guess
+//     {
+//         background-color: $orangeTag;
+//     }
+
+//     .added
+//     {
+//         background-color: $greenTag;
+//     }
+
+//     .width-60
+//     {
+//         width: 60%;
+//     }
+
+//     .full-width-select
+//     {
+//         &>.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+//         {
+//             width: 100%;
+//         }
+//     }
+
+//     .width-50-select
+//     {
+//         &>.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+//         {
+//             width: 50%;
+//             .btn-select
+//             {
+//                 border: 0.5px solid $semiDarkText;
+//                 background-color: $lighterBackgroundColor;
+//                 box-shadow: none;
+//                 height: 20px;
+//                 padding: 0 14px 0 5px;
+//                 font-size: $fontSizeSm;
+//             }
+//         }
+//     }
+
+//     .width-8-select
+//     {
+//         &>.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+//         {
+//             width: 8%;
+//             .btn-select
+//             {
+//                 border: 0.5px solid $semiDarkText;
+//                 background-color: $lighterBackgroundColor;
+//                 box-shadow: none;
+//                 height: 20px;
+//                 padding: 0 20px 0 5px;
+//                 font-size: $fontSizeSm;
+//             }
+//         }
+//     }
+//     .config-select
+//     {
+//         &>.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+//         {
+//             width: 120px;
+//             .btn-select
+//             {
+//                 border: 0.5px solid $darkBackgroundColor;
+//                 background-color: $darkBackgroundColor;
+//                 color: $lightText;
+//                 box-shadow: none;
+//                 height: 20px;
+//                 padding: 0 14px 0 5px;
+//             }
+//             .btn:focus{
+//                 outline: none !important;
+//             }
+//             .btn:hover {
+//                 background: $darkBackgroundColor;
+//             }
+//         }
+//     }
+
+
+//     .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+//     {
+//         width: 26px;
+//         margin-top: 0px;
+
+//         .btn-select
+//         {
+//             border: 1px solid $comboBoxColor;
+//             background-color: $comboBoxColor;
+//             box-shadow: none;
+//             height: 20px;
+//             padding: 0 14px 0 3px;
+//         }
+//     }
+
+//     .form-control[type='text'], .form-control[type='number']
+//     {
+//         height: 20px;
+//         padding: 0 0 0 2px;
+//     }
+
+//     form
+//     {
+//         margin: 0;
+//     }
+
+//     .patient-info
+//     {
+//         height: 60px;
+//         background-color: $darkBackgroundColor;
+//         border-top-left-radius: 4px;
+//         border-top-right-radius: 4px;
+
+//         .edit-info
+//         {
+//             display: inline-block;
+//             margin-right: $tytoSmWidth;
+//             font-size: 16px;
+//             vertical-align: top;
+//             margin-top: 22px;
+//             color: $lightText;
+//         }
+
+//         .patient-info-item
+//         {
+//             display: inline-block;
+//             margin-right: $tytoSmWidth;
+
+//             div:first-child
+//             {
+//                 margin-top: $tytoSmWidth;
+//                 line-height: $tytoMdWidth;
+//                 opacity: 0.3;
+//                 letter-spacing: 1px;
+//                 font-size: $fontSizeXs;
+//             }
+
+//             div:last-child
+//             {
+//                 line-height: $tytoMdWidth;
+//                 margin-bottom: $tytoSmWidth;
+//                 letter-spacing: 0.5px;
+//                 font-size: $fontSizeSm;
+//                 font-weight: normal;
+
+//                 &::after
+//                 {
+//                     content: "\00A0";
+//                 }
+//             }
+//         }
+//     }
+
+//     modal-dialog
+//     {
+//         color: $blackText;
+
+//         .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+//         {
+//             width: 100%;
+//         }
+//     }
+
+//     .input-output-container
+//     {
+//         display: flex;
+//         align-content: stretch;
+//         flex-direction: row;
+//         min-height: 200px;
+
+//         .sprava-item
+//         {
+//             padding-left: $tytoSmWidth;
+//             font-size: $fontSizeSm;
+//             font-weight: normal;
+//             letter-spacing: 0.5px;
+//             margin-bottom: $tytoSmWidth;
+//             line-height: $fontSizeMd;
+
+//             &.last
+//             {
+//                 margin-bottom: 0;
+//             }
+//         }
+
+//         .input-section
+//         {
+//             flex: 2;
+//             padding-left: $tytoMdWidth;
+//             padding-right: $tytoSmWidth;
+//             padding-bottom: $tytoSmWidth;
+//             max-width: 40%;
+//         }
+
+//         .output-section
+//         {
+//             flex: 3;
+//             padding-right: $tytoMdWidth;
+//             padding-left: $tytoSmWidth;
+//             background-color: $ligntBackgroundColor;
+//             border-bottom-right-radius: 4px;
+//             padding-bottom: $tytoSmWidth;
+//             color: $blackText;
+//             max-width: 60%;
+//         }
+
+//         h2
+//         {
+//             padding-top: $tytoMdWidth;
+//             padding-bottom: $tytoMdWidth;
+//             padding-left: $tytoSmWidth;
+//             font-size: $fontSizeMd;
+//             font-weight: normal;
+//             letter-spacing: 1px;
+//             margin-bottom: 0;
+//         }
+
+//         h3
+//         {
+//             margin: 0;
+//             font-size: $fontSizeMd;
+//             font-weight: normal;
+//             letter-spacing: 1px;
+//             color: $blackText;
+//         }
+
+//         div[variant], div[ng-reflect-variant], .variant-cmp
+//         {
+//             font-size: $fontSizeSm;
+//             background-color: $whiteBackgroundColor;
+//             margin-bottom: $tytoSmWidth;
+//             border-radius: 4px;
+//             color: $blackText;
+//             padding: $tytoSmWidth $tytoSmWidth 0;
+//             letter-spacing: 0.5px;
+
+//             &.last
+//             {
+//                 margin-bottom: 0;
+//             }
+
+//             &.original 
+//             {
+//                 border: 1px solid $semiDarkBackgroundColor;
+
+//                 .drg
+//                 {
+//                     color: $blackText;
+//                 }
+//             }
+
+//             .drg
+//             {
+//                 color: $buttonDarkColor;
+//                 font-weight: bold;
+//                 font-size: $fontSizeMd;
+//             }
+
+//             .hdg
+//             {
+//                 color: $blackText;
+//             }
+
+//             .last-rounded
+//             {
+//                 &>*:last-child
+//                 {
+//                     border-bottom-right-radius: 4px;
+//                 }
+//             }
+
+//             .select
+//             {
+//                 padding-bottom: 9px;
+//                 border-top-left-radius: 0;
+//                 border-top-right-radius: 0;
+//                 border-bottom-left-radius: 0;
+//             }
+
+//             .sum
+//             {
+//                 font-size: $fontSizeMd;
+//                 padding-left: $tytoSmWidth;
+//                 padding-right: $tytoSmWidth;
+//                 background-color: $buttonDarkColor;
+//                 color: $lightText;
+
+//                 &.error-drg
+//                 {
+//                     background-color: $buttonInvalidDarkColor;
+//                 }
+//             }
+
+//             .line-label
+//             {
+//                 font-size: $fontSizeXs;
+//                 letter-spacing: 1px;
+
+//                 &:not(.text-danger)
+//                 {
+//                     color: $semiDarkText;
+//                 }
+//             }
+
+//             .width-content
+//             {
+//                 width: 84%;
+//                 margin-right: 8%;
+//             }
+
+//             .tag
+//             {
+//                 border-radius: 4px;
+//                 padding: 0 4px;
+
+//                 &:not(.deleted):not(.added):not(.used):not(.grey):not(.hdg):not(.gui)
+//                 {
+//                     color: $semiDarkText;
+//                 }
+//             }
+
+//             .bottom-panel
+//             {
+//                 margin-left: -10px;
+//                 margin-right: -10px;
+//                 border-bottom-left-radius: 4px;
+//                 border-bottom-right-radius: 4px;
+//                 background-color: $lighterBackgroundColor;
+//                 height: $tytoLgWidth;
+//                 line-height: $tytoLgWidth;
+//                 padding-left: $tytoMdWidth;
+//             }
+
+//             .detail
+//             {
+//                 display: flex;
+//                 flex-direction: row;
+//                 flex-wrap: wrap;
+//                 margin-top: $tytoSmWidth;
+//                 margin-bottom: $tytoSmWidth;
+//                 border-top: 1px solid $comboBoxColor;
+//                 border-bottom: 1px solid $comboBoxColor;
+
+//                 &>div.form-group
+//                 {
+//                     flex: 1;
+//                     min-width: 25%;
+//                     padding-left: $tytoSmWidth;
+//                     padding-right: $tytoSmWidth;
+
+//                     &>label
+//                     {
+//                         letter-spacing: 1px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .output-block
+//         {
+//             font-size: $fontSizeSm;
+//             background-color: $whiteBackgroundColor;
+//             margin-bottom: $tytoSmWidth;
+//             border-radius: 4px;
+//             color: $blackText;
+//             padding: $tytoSmWidth $tytoSmWidth 0;
+//             letter-spacing: 0.5px;
+
+//             &.original 
+//             {
+//                 border: 1px solid $semiDarkBackgroundColor;
+
+//             }
+
+//             .drg
+//             {
+//                 color: $buttonDarkColor;
+//                 font-weight: bold;
+//                 font-size: $fontSizeMd;
+//             }
+
+//             .last-rounded
+//             {
+//                 &>*:last-child
+//                 {
+//                     border-bottom-right-radius: 4px;
+//                 }
+//             }
+
+//             .sum
+//             {
+//                 font-size: $fontSizeMd;
+//                 padding-left: $tytoSmWidth;
+//                 padding-right: $tytoSmWidth;
+//                 background-color: $buttonDarkColor;
+//                 color: $lightText;
+//             }
+
+//             .line-label
+//             {
+//                 font-size: $fontSizeXs;
+//                 letter-spacing: 1px;
+//             }
+
+//             .width-content
+//             {
+//                 width: 84%;
+//                 margin-right: 8%;
+//             }
+
+//             .bottom-panel
+//             {
+//                 margin-left: -10px;
+//                 margin-right: -10px;
+//                 border-bottom-left-radius: 4px;
+//                 border-bottom-right-radius: 4px;
+//                 background-color: $lighterBackgroundColor;
+//                 height: $tytoLgWidth;
+//                 line-height: $tytoLgWidth;
+//                 padding-left: $tytoMdWidth;
+//             }
+//         }
+
+//         .input-block
+//         {
+//             font-size: $fontSizeSm;
+//             background-color: $whiteBackgroundColor;
+//             margin-bottom: $tytoSmWidth;
+//             border-radius: 4px;
+//             color: $blackText;
+//             padding: $tytoSmWidth $tytoSmWidth 0;
+ 
+//             .heading
+//             {
+//                 padding-left: 20px;
+//                 margin-bottom: $tytoMdWidth;
+//                 width: 90%;
+
+//                 &>div
+//                 {
+//                     margin-left: $tytoSmWidth;
+//                     line-height: $fontSizeSm;
+//                     margin-top: 3px;
+
+//                     &:first-of-type
+//                     {
+//                         color: $semiDarkText;
+//                     }
+
+//                     &:last-child
+//                     {
+//                         width: 48%;
+//                     }
+//                 }
+//             }
+//             .form-control[type='number']
+//             {
+//                   border-width: 1px; 
+//                   border: 0.5px solid $semiDarkText;
+//                   background-color: $lighterBackgroundColor;
+//                   box-shadow: none;
+//                   padding: 0 0px 0 5px;
+//                   text-align: left;
+//                   font-size: $fontSizeSm;
+//             }
+//             .form-control[type='text']
+//             {
+//                   border-width: 1px; 
+//                   border: 0.5px solid $semiDarkText;
+//                   background-color: $lighterBackgroundColor;
+//                   box-shadow: none;
+//                   padding: 0 5px 0 5px;
+//                   text-align: left;
+//                   font-size: $fontSizeSm;
+//            }
+//             .drg-add-item-bubble
+//             {
+//                 background-color: $lighterBackgroundColor;
+//                 border: 0.5px solid $semiDarkText;
+//                 border-radius: 4px;
+//                 box-shadow: none;
+//                 margin-right: 8px;
+//                 margin-top: 0px;
+//                 padding: 1px 3px;
+//                 display: inline-block;
+//                 font-size: $fontSizeSm;
+
+//                 &:hover
+//                 {
+//                     box-shadow: 0 0 3px #555555 inset;
+//                     cursor: default;
+//                 }
+
+//                 span.glyphicon
+//                 {
+//                     color: #888888;
+//                     font-size: 0.85em;
+
+//                     &:hover
+//                     {
+//                         color: #666666;
+//                         cursor: pointer;
+//                     }
+//                 }
+//             }
+               
+//             .detail
+//             {
+//              .line-label
+//             {
+//                 font-size: $fontSizeXs;
+//                 letter-spacing: 1px;
+//             }
+//                &>div.form-group
+//                 {
+//                     display: inline-block;
+
+//                     &>label
+//                     {
+//                         letter-spacing: 1px;
+//                     }
+
+//                     .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+//                     {
+//                         display: inline-block;
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//             .form-group
+//             {
+//                 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+//                 {
+//                     display: inline-block;
+//                     width: 100%;
+//                     .btn-select
+//                     {
+//                         padding: 0 0 0 2px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         div[udalost], div[ng-reflect-udalost], .udalost-cmp
+//         {
+//             font-size: $fontSizeSm;
+//             padding: $tytoSmWidth;
+//             background-color: $whiteBackgroundColor;
+//             margin-bottom: $tytoSmWidth;
+//             border-radius: 4px;
+//             color: $blackText;
+//             letter-spacing: 0.5px;
+
+//             &.last
+//             {
+//                 margin-bottom: 0;
+//             }
+
+//             &.non-drg
+//             {
+//                 background-color: #e1e1e1;
+//             }
+
+//             .dg-vyk-tag
+//             {
+//                 display: inline-block;
+//                 width: 34px;
+//                 text-align: center;
+//                 border-radius: 4px;
+//             }
+
+//             .line-label
+//             {
+//                 color: $semiDarkText;
+//                 font-size: $fontSizeXs;
+//             }
+
+//             .heading
+//             {
+//                 padding-left: 20px;
+//                 margin-bottom: $tytoSmWidth;
+//                 width: 90%;
+
+//                 &>div
+//                 {
+//                     margin-left: $tytoSmWidth;
+//                     line-height: $fontSizeSm;
+//                     margin-top: 3px;
+
+//                     &:first-of-type
+//                     {
+//                         color: $semiDarkText;
+//                     }
+
+//                     &:last-child
+//                     {
+//                         width: 48%;
+//                     }
+//                 }
+//             }
+
+//             .detail
+//             {
+//                 display: flex;
+//                 flex-direction: row;
+//                 flex-wrap: wrap;
+//                 margin-top: $tytoMdWidth;
+
+//                 &>div.form-group
+//                 {
+//                     flex: 1;
+//                     min-width: 50%;
+//                     padding-left: $tytoSmWidth;
+//                     padding-right: $tytoSmWidth;
+
+//                     &>label
+//                     {
+//                         letter-spacing: 1px;
+//                     }
+
+//                     .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+//                     {
+//                         display: block;
+//                         width: 100%;
+
+//                         .btn-select
+//                         {
+//                             padding: 0 0 0 2px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+//         .icon
+//         {
+//             font-size: 17px;
+//             color: $semiDarkText;
+
+//             &.text-info
+//             {
+//                 color: #31708f;
+//             }
+
+//             &.small-icon
+//             {
+//                 font-size: $fontSizeMd;
+//             }
+//         }
+
+//         a, button
+//         {
+//             &.content-button
+//             {
+//                 color: $semiDarkText;
+//                 font-size: $fontSizeSm;
+//                 letter-spacing: 0.5px;
+//                 text-decoration: none;
+
+//                 &:hover, &:hover>.icon
+//                 {
+//                     color: $buttonLightColor;
+//                 }
+
+//                 &:active, &:active>.icon
+//                 {
+//                     color: $buttonDarkerColor;
+//                 }
+//             }
+
+//             &.tyto-button
+//             {
+//                 background-color: $buttonLightColor;
+//                 height: $tytoLgWidth;
+//                 margin-top: $tytoSmWidth;
+//                 margin-bottom: $tytoSmWidth;
+//                 padding: $tytoSmWidth;
+//                 color: $lightText;
+//                 font-size: $fontSizeSm;
+//                 border-radius: 4px;
+//                 text-decoration: none;
+//                 letter-spacing: 1px;
+
+//                 &.disabled
+//                 {
+//                     background-color: lighten($buttonLightColor, 10%);
+//                     cursor: default;
+
+//                     &>span.glyphicon
+//                     {
+//                         color: lighten($buttonDarkColor, 10%);
+//                     }
+//                 }
+
+//                 &.error-drg
+//                 {
+//                     background-color: $buttonInvalidLightColor;
+
+//                     &>span.glyphicon, &>span.fa
+//                     {
+//                         color: $buttonInvalidDarkColor;
+//                     }
+//                 }
+
+//                 &:hover:not(.disabled), &:focus:not(.disabled)
+//                 {
+//                     background-color: $buttonDarkerColor;
+
+//                     &.error-drg
+//                     {
+//                         background-color: $buttonInvalidDarkerColor;
+//                     }
+//                 }
+
+//                 &:active:not(.disabled)
+//                 {
+//                     transform: translateY(2px);
+//                 }
+
+//                 &>span.glyphicon, &>span.fa
+//                 {
+//                     color: $buttonDarkColor;
+//                 }
+//             }
+//         }
+//     }
+// }

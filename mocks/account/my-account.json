@@ -1,0 +1,12 @@
+{
+    "login": "ace.developer",
+    "roles": [
+        "ROLE_AUTH_ACE",
+        "ROLE_DEVEL"
+    ],
+    "privileges": [
+        "dashboard-page",
+        "debugInfo",
+        "mosiaDetailHodnotenia-page"
+    ]
+}

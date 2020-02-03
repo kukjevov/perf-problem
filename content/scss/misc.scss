@@ -1,0 +1,558 @@
+@import "variables.scss";
+
+// ---------------------- MISCELANEOUS ----------------------
+.pointer-cursor
+{
+    cursor: pointer;
+}
+
+.not-allowed-cursor
+{
+    cursor: not-allowed;
+}
+
+.block
+{
+    display: block;
+}
+
+.inline-block
+{
+    display: inline-block;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row-end
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.flex-row-reverse
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-row-wrap
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-row-reverse-wrap
+{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column-wrap
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-1
+{
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+}
+
+.flex-2
+{
+    flex: 2;
+    min-width: 0;
+    min-height: 0;
+}
+
+.flex-3
+{
+    flex: 3;
+    min-width: 0;
+    min-height: 0;
+}
+
+.flex-4
+{
+    flex: 4;
+    min-width: 0;
+    min-height: 0;
+}
+
+.flex-5
+{
+    flex: 5;
+    min-width: 0;
+    min-height: 0;
+}
+
+.flex-2-perc
+{
+    flex: 2;
+    max-width: 40%;
+    min-width: 0;
+    min-height: 0;
+}
+
+.flex-3-perc
+{
+    flex: 3;
+    max-width: 60%;
+    min-width: 0;
+    min-height: 0;
+}
+
+.grid-whole-row
+{
+    grid-column: 1 / -1;
+    min-width: 0;
+}
+
+.align-self-center
+{
+    align-self: center;
+}
+
+.align-content-start
+{
+    align-content: flex-start;
+}
+
+.justify-self-center
+{
+    justify-self: center;
+}
+
+.justify-content-end
+{
+    justify-content: end;
+}
+
+.relative
+{
+    position: relative;
+}
+
+.absolute
+{
+    position: absolute;
+}
+
+.left-0
+{
+    left: 0;
+}
+
+.top-0
+{
+    top: 0;
+}
+
+.right-0
+{
+    right: 0;
+}
+
+.bottom-0
+{
+    bottom: 0;
+}
+
+.va-middle
+{
+    vertical-align: middle;
+}
+
+.va-top
+{
+    vertical-align: top;
+}
+
+.margin-xs-vertical
+{
+    margin-top: $xsWidth;
+    margin-bottom: $xsWidth;
+}
+
+.margin-xs-right
+{
+    margin-right: $xsWidth;
+}
+
+.margin-xs-bottom
+{
+    margin-bottom: $xsWidth;
+}
+
+.margin-xs-left
+{
+    margin-left: $xsWidth;
+}
+
+.margin-xs-horizontal
+{
+    margin-left: $xsWidth;
+    margin-right: $xsWidth;
+}
+
+.margin-sm-top
+{
+    margin-top: $smWidth;
+}
+
+.margin-sm-left
+{
+    margin-left: $smWidth;
+}
+
+.margin-sm-bottom
+{
+    margin-bottom: $smWidth;
+}
+
+.margin-sm-vertical
+{
+    margin-top: $smWidth;
+    margin-bottom: $smWidth;
+}
+
+.margin-sm-right
+{
+    margin-right: $smWidth;
+}
+
+.margin-sm-horizontal
+{
+    margin-right: $smWidth;
+    margin-left: $smWidth;
+}
+
+.margin-md-top
+{
+    margin-top: $mdWidth;
+}
+
+.margin-md-right
+{
+    margin-right: $mdWidth;
+}
+
+.margin-md-left
+{
+    margin-left: $mdWidth;
+}
+
+.margin-md-bottom
+{
+    margin-bottom: $mdWidth;
+}
+
+.margin-lg-top
+{
+    margin-top: $lgWidth;
+}
+
+.margin-lg-bottom
+{
+    margin-bottom: $lgWidth;
+}
+
+.margin-lg-left
+{
+    margin-left: $lgWidth;
+}
+
+.margin-xl-right
+{
+    margin-right: $xlWidth;
+}
+
+.margin-xl-left
+{
+    margin-left: $xlWidth;
+}
+
+.margin-xl-bottom
+{
+    margin-bottom: $xlWidth;
+}
+
+.margin-none-vertical
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.margin-none-horizontal
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.margin-none-top
+{
+    margin-top: 0;
+}
+
+.margin-none-bottom
+{
+    margin-bottom: 0;
+}
+
+.padding-xs-left
+{
+    padding-left: $xsWidth;
+}
+
+.padding-xs-right
+{
+    padding-right: $xsWidth;
+}
+
+.padding-sm-left
+{
+    padding-left: $smWidth;
+}
+
+.padding-sm-right
+{
+    padding-right: $smWidth;
+}
+
+.padding-sm-top
+{
+    padding-top: $smWidth;
+}
+
+.padding-sm-bottom
+{
+    padding-bottom: $smWidth;
+}
+
+.padding-md-top
+{
+    padding-top: $mdWidth;
+}
+
+.padding-none-left
+{
+    padding-left: 0;
+}
+
+.padding-none-horizontal
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.space-after
+{
+    margin-bottom: 200px;
+}
+
+.content-wrap
+{
+    white-space: normal;
+}
+
+.content-nowrap
+{
+    white-space: nowrap;
+}
+
+.max-width-none
+{
+    max-width: 0;
+}
+
+.min-width-none
+{
+    min-width: 0;
+}
+
+.min-height-none
+{
+    min-width: 0;
+}
+
+.min-dimensions-none
+{
+    min-width: 0;
+    min-height: 0;
+}
+
+.max-height-full
+{
+    max-height: 100%;
+}
+
+.half-width
+{
+    width: 50%;
+}
+
+.full-width
+{
+    width: 100%;
+}
+
+.full-height
+{
+    height: 100%;
+}
+
+.quarter-width
+{
+    width: 25%;
+}
+
+.third-width
+{
+    width: 33.33%;
+}
+
+.separator
+{
+    background-color: lighten($primaryColor, 38%);
+    box-shadow: 0 0 3px $primaryColor;
+    height: 1px;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+.text-uppercase
+{
+    text-transform: uppercase;
+}
+
+.text-ellipsis
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.line-height-1em
+{
+    line-height: 1em;
+}
+
+.font-1em
+{
+    font-size: 1em;
+}
+
+.font-bigger-sm
+{
+    font-size: 1.1em;
+}
+
+.font-bigger-md
+{
+    font-size: 1.2em;
+}
+
+.thin-scrollbar
+{
+    scrollbar-width: thin;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb
+{
+    background-color: #cdcdcd;
+}
+
+.thin-scrollbar::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #f0f0f0;
+}
+
+.overflow-hidden
+{
+    overflow: hidden;
+}
+
+.overflow-auto
+{
+    overflow: auto;
+}
+
+.overflow-vertical-auto
+{
+    overflow-y: auto;
+}
+
+.table-container
+{
+    overflow-x: auto;
+}
+
+.font-color-red
+{
+    color: $redColor;
+}
+
+.file-upload.input-group
+{
+    overflow: hidden;
+    position: relative;
+
+    &>input[type="text"]
+    {
+        font-size: 14px;
+        height: 34px;
+        padding: 6px 12px;
+        border-bottom-right-radius: 4px !important;
+        border-top-right-radius: 4px !important;
+        z-index: 0;
+    }
+
+    &>input[type="file"]
+    {
+        cursor: pointer;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@media print
+{
+    .print-hidden
+    {
+        display: none;
+    }
+}

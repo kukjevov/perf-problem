@@ -1,0 +1,48 @@
+//---------------------- PAGE STYLING ----------------------
+.app-page-dark.print
+{
+    background-color: $whiteBackgroundColor;
+
+    @media print
+    {
+        padding-top: $pageMdWidth;
+    }
+
+    //############## TITLE ##############
+    .title
+    {
+        background-color: darken($ligntBackgroundColor, 10%);
+        color: $blackText;
+
+        @media print
+        {
+            background-color: darken($ligntBackgroundColor, 10%) !important;
+        }
+    }
+
+    //############## BLOCKS ##############
+
+    .light-block
+    {
+        @media print
+        {
+            background-color: $ligntBackgroundColor !important;
+        }
+    }
+
+    .highlight-block
+    {
+        @media print
+        {
+            background-color: $whiteBackgroundColor !important;
+            margin-top: $pageSmWidth;
+        }
+    }
+
+    //############## BUTTONS ##############
+
+    .btn-icon
+    {
+        display: none;
+    }
+}

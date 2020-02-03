@@ -1,0 +1,434 @@
+@import "scss/variables.scss";
+@import "scss/fonts.scss";
+@import "scss/misc.scss";
+@import "scss/bootstrap-override.scss";
+@import "scss/theme/app-dark-theme.scss";
+@import "scss/theme/app-dark-theme-print.scss";
+@import "scss/components.scss";
+@import "scss/pages.scss";
+
+// ---------------------- COMMON ----------------------
+html
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0 !important;
+    font-family: "Open Sans";
+    font-size: 13px;
+    min-width: 1010px;
+    min-height: 100%;
+}
+
+app
+{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.no-ie, .no-grid
+{
+    display: none;
+}
+
+.no-arrow
+{
+    .no-ie
+    {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.7em;
+    }
+
+    app
+    {
+        display: none;
+    }
+}
+
+.no-cssgrid.arrow
+{
+    .no-grid
+    {
+        display: block;
+    }
+}
+
+// ---------------------- APP STARTING ----------------------
+
+.loading-indicator
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 23456;
+    opacity: 1;
+
+    & > div
+    {
+        border: 4px solid #eee;
+        border-bottom: none;
+        border-top-left-radius: 48px;
+        border-top-right-radius: 48px;
+        height: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 50%;
+        width: 48px;
+        animation-name: rotate-loading;
+        animation-duration: 450ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-origin: calc(50%) calc(50% + 12px);
+    }
+}
+
+@keyframes rotate-loading
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+// ---------------------- NAVIGATION ----------------------
+.navbar-version
+{
+    line-height: 11px;
+    font-size: 10px;
+    color: #969696
+}
+
+.navbar-brand.async-init
+{
+    font-size: 0.9em;
+
+    &:hover .boxes
+    {
+        display: block;
+    }
+
+    .boxes
+    {
+        display: none;
+        font-size: 12px;
+        line-height: 14px;
+        color: #333;
+        background-color: #EEE;
+        padding: 6px;
+        border-radius: 4px;
+    }
+}
+
+// ---------------------- CONTAINER ----------------------
+.container.main
+{
+    padding: 0;
+    flex: 1;
+    // display: flex;
+    // align-items: stretch;
+    // flex-direction: column;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .container.main
+    {
+        width: 98%;
+    }
+}
+
+@media screen and (min-width: 1440px)
+{
+    .container.main
+    {
+        width: 90%;
+    }
+}
+
+// ---------------------- LOGOS ----------------------
+.logo
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -5;
+}
+
+.logo-top
+{
+    width: 80px;
+    height: 76px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+.logo-jubula
+{
+    background-image: url("./images/logo-jubula.png");
+}
+
+.logo-chiroptera
+{
+    background-image: url("./images/logo-chiroptera.png");
+}
+
+// ---------------------- LOGIN VIEW ----------------------
+login-view.app-page
+{
+    width: 33%;
+    height: calc(100vh - 72px);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+
+    &.ng-animating
+    {
+        width: 33%;
+        margin-left: 33%;
+    }
+
+    &>div
+    {
+        flex: 1 0 auto;
+    }
+}
+
+// ---------------------- DASHBOARD VIEW ----------------------
+dashboard-view.app-page
+{
+    &>div
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        a.trachops-module
+        {
+            flex: 0 0 48%;
+            margin-bottom: $pageSmWidth;
+            font-size: 2em;
+            padding-top: $pageMdWidth;
+            padding-bottom: $pageMdWidth;
+        }
+    }
+}
+
+// ---------------------- HELP VIEW ----------------------
+help-view, .help-view, documentation-view
+{
+    background-color: #FFF;
+    display: block;
+    padding: 10px;
+    font-size: 1.4em;
+
+    @media print
+    {
+        h2
+        {
+            page-break-before: always;
+        }
+
+        .no-pdf
+        {
+            display: none;
+        }
+    }
+
+    div
+    {
+        &>img
+        {
+            width: 100%;
+
+            &+*
+            {
+                display: block;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media print
+{
+    body
+    {
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+// ---------------------- MESSAGE LIST VIEW ----------------------
+
+messages-list-view.app-page
+{
+    .content-block
+    {
+        width: 90%;
+        margin: auto
+    }
+
+    .selected-message
+    {
+        background: #d4d4d4 !important;
+    }
+}
+
+// ---------------------- CREATE/EDIT MESSAGE VIEW ----------------------
+
+message-create-view.app-page, message-edit-view.app-page
+{
+    .content-block
+    {
+        width: 90%;
+        margin: auto
+    }
+
+    .content-placement
+    {
+        display: grid; 
+        grid-template-columns: 130px 1fr; 
+        grid-gap: 10px; 
+        padding: 10px; 
+        text-align: center
+    }
+
+    .message-send-button
+    {
+        border-radius: 5px;
+        background: #a9a9a9; 
+        grid-row-start: 2; 
+        grid-row-end: 6; 
+        box-shadow: 0 4px 8px 0 rgba(0,0,0.5,0.2);
+
+        & > .icon-placement
+        {
+            text-align: center; 
+            margin: auto; 
+            margin-top:70px;
+        }
+
+        &:hover
+        {
+            background:#969696;
+            box-shadow: 3px 6px 10px 0 rgba(0,0,0.5,0.2);
+        }
+    }
+
+    .checkbox-group-alignment-left
+    {
+        text-align: left !important;
+    }
+}
+
+// ---------------------- PROJECT MISC ----------------------
+
+.flex-12
+{
+    flex: 12;
+    min-width: 0;
+}
+
+// ---------------------- PANEL ----------------------
+.panel
+{
+    margin-bottom: 0;
+    color: $defaultFontColor;
+}
+
+h3.title
+{
+    text-transform: uppercase;
+}
+
+// ---------------------- ALERT -----------------------
+.floating-alert
+{
+    position: relative;
+
+    &.has-error:hover
+    {
+        .alert
+        {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    .alert
+    {
+        opacity: 0;
+        position: absolute;
+        padding: 4px 8px;
+        font-size: $fontSizeSm;
+        width: 100%;
+        pointer-events: none;
+        transition: opacity 250ms;
+        z-index: 10;
+    }
+}
+
+// --------------------- FLEX -------------------------
+.flex-row-responsive
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-3-column
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    > div
+    {
+        flex: 0 0 33.3333%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .flex-row-responsive
+    {
+        flex-direction: column;
+    }
+
+    .flex-3-column
+    {
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        > div
+        {
+            width: 100%;
+            flex: 1;
+        }
+    }
+}

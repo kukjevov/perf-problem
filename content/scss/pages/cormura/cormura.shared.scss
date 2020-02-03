@@ -1,0 +1,46 @@
+@import '../../theme/app-theme.scss';
+
+cormura-data
+{
+    tree-node
+    {
+        .valid-false
+        {
+            fill: #EC0E0E;
+            transition: fill 500ms;
+        }
+
+        .valid-true
+        {
+            fill: #6ABA4F;
+            transition: fill 500ms;
+        }
+
+        .line-thick
+        {
+            fill: none;
+            stroke-width: 2px;
+            stroke: #666666;
+        }
+    }
+
+    .cormura-produkt-line
+    {
+        .typ
+        {
+            margin-left: 32px;
+            flex: 0 0 60px;
+        }
+
+        .kod
+        {
+            flex: 0 0 92px;
+        }
+
+        .text
+        {
+            flex: 1;
+            min-width: 0;
+        }
+    }
+}

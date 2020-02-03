@@ -1,0 +1,42 @@
+@import '../variables.scss';
+@import '../theme/app-theme.scss';
+
+dg-prod-detail
+{
+    .flex-container
+    {
+        display: flex;
+        flex-flow: row;
+
+        .detail-title
+        {
+            width: 80px;
+        }
+
+        .detail-value
+        {
+            max-width: calc(100% - 80px);
+        }
+    }
+
+    .node-template
+    {
+        font-size: $fontSizeXs;
+        position: relative;
+
+        .detail
+        {
+            display: none;
+            position: absolute;
+            width: 640px;
+            padding: $xsWidth $smWidth;
+            z-index: 10;
+            box-shadow: inset 0px 0px 8px -4px #000000;
+        }
+
+        &:hover .detail
+        {
+            display: block;
+        }
+    }
+}

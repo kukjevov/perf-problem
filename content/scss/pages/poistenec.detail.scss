@@ -1,0 +1,246 @@
+$headerHeight: 14px;
+
+poistenec-view>detail-view
+{
+    //******** GRAPH ********//
+    .default-circle
+    {
+        stroke: #000000;
+        fill: #000000;
+        stroke-width: 1;
+
+        &.detail
+        {
+            fill: #FFFFFF;
+        }
+
+        &.highlight
+        {
+            fill: #AAAAAA;
+        }
+    }
+
+    .arrow-ziadanka
+    {
+        stroke: #AAA;
+        fill: #AAA;
+    }
+
+    .arrow-hospitalizacia, .arrow-choroba
+    {
+        stroke: #333;
+        fill: #333;
+    }
+
+    .line
+    {
+        &.row-line
+        {
+            stroke: #EEE;
+        }
+
+        &.ziadanka
+        {
+            stroke: #AAA;
+            stroke-dasharray: 4;
+        }
+
+        &.hospitalizacia, &.choroba
+        {
+            stroke: #333;
+        }
+    }
+
+    //******** GENERAL ********//
+    .tight-content
+    {
+        font-size: 0.9em;
+    }
+
+    //******** TABLE CONTENT DYNAMIC ********//
+    .flex-container
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        min-width: 1140px;
+
+        .component-stretch
+        {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        //******** GENERAL HEADER AND ROWS ********//
+        .flex-item
+        {
+            flex: 0 1 auto;
+
+            &.header
+            {
+                border-bottom: 1px solid #000;
+                line-height: $headerHeight;
+
+                &.header-container
+                {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                }
+
+                .vertical-text-wrapper
+                {
+                    display: inline-block;
+                    overflow: hidden;
+                    width: $headerHeight;
+                    line-height: $headerHeight;
+
+                    .vertical-text
+                    {
+                        display: inline-block;
+                        white-space: nowrap;
+                        font-size: 1.05em;
+
+                        transform: translate(0,100%) rotate(-90deg);
+                        transform-origin: 0 0;
+                    }
+
+                    .vertical-text:after 
+                    {
+                        content: "";
+                        float: left;
+                        margin-top: 100%;
+                    }
+                }
+            }
+
+            &>span, &>div>span, &>div>div>span
+            {
+                display: inline-block;
+            }
+
+            //******** TABLE ROW DYNAMIC ********//
+            &:not(.header) 
+            {
+                &>div:hover
+                {
+                    background-color: rgba(220, 220, 220, 0.7)
+                }
+
+                &>div>div>span
+                {
+                    @extend .text-ellipsis;
+
+                    line-height: 16px;
+                    padding-right: 4px;
+                    vertical-align: bottom;
+                    border-bottom: 1px solid #EEE;
+                    transition: background-color 550ms;
+                }
+            }
+
+            //******** TABLE HEADER DYNAMIC ********//
+            &.header>span, &.header>div>span
+            {
+                font-weight: bold;
+                font-size: 0.8em;
+                vertical-align: bottom;
+                padding-right: 4px;
+
+                &:not(.vertical-text-wrapper)
+                {
+                    @extend .text-ellipsis;
+                }
+            }
+        }
+
+        .row-flex
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .first-static
+        {
+            flex: 0 0 158px;
+        }
+
+        .second-dynamic
+        {
+            flex: 1 1 auto;
+        }
+
+        .third-static
+        {
+            flex: 0 0 230px;
+        }
+
+        .first-col
+        {
+            width: 100px;
+        }
+
+        .second-col
+        {
+            flex: 1 1 auto;
+            
+            &>div
+            {
+                width: 100%;
+            }
+
+            .button
+            {
+                width: 12px;
+            }
+
+            .datum
+            {
+                width: 70px;
+            }
+
+            .cena
+            {
+                width: 76px;
+            }
+
+            .sluzba
+            {
+                width: 50%;
+            }
+
+            .dovod
+            {
+                width: 50%;
+            }
+
+            .odb
+            {
+                width: 40px;
+            }
+
+            .pzs
+            {
+                width: 75px;
+            }
+
+            .lekar
+            {
+                width: 75px;
+            }
+
+            .problem
+            {
+                width: 40px;
+            }
+        }
+
+        .third-col
+        {
+            width: 200px;
+        }
+    }
+}

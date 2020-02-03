@@ -1,0 +1,250 @@
+$pColor: #9e5ece;
+$dColor: #14b1e7;
+
+.poistenec
+{
+    .text-orange
+    {
+        color: #FFB73B;
+    }
+    .text-blue
+    {
+        color: #2caed6;
+    }
+    .text-purple
+    {
+        color: #9e5ece;
+    }
+
+    prihoda
+    {
+        display: block;
+
+        &.macrotis-in
+        {
+            background-color: #B5CBD6;
+        }
+
+        &.macrotis-out
+        {
+            background-color: #9CDDFB;
+        }
+
+        &.zpis-in
+        {
+            background-color: #E2D4C2;
+        }
+
+        &.zpis-out
+        {
+            background-color: #FED58A;
+        }
+
+        &.not-zpis-macrotis
+        {
+            background-color: #F4B8B8;
+        }
+
+        &.zamietnute-zrusene
+        {
+            background-color: #DADADA;
+        }
+
+        .short
+        {
+            height: 32px;
+            align-items: center;
+
+            .collapse-btn
+            {
+                flex: 0 0 24px;
+                // align-self: center;
+                display: flex;
+
+                button
+                {
+                    font-size: 1em;
+                }
+            }
+
+            .description
+            {
+                flex: 1;
+                min-width: 0;
+                // align-self: center;
+            }
+
+            .vaha
+            {
+                flex: 0 0 33px;
+            }
+
+            .load-btn
+            {
+                flex: 0 0 16px;
+
+                button
+                {
+                    font-size: 36px;
+                    line-height: 36px;
+                }
+            }
+
+            .icons
+            {
+                flex: 0 0 16px;
+            }
+        }
+
+        udalost, udalost-riadok
+        {
+            display: block;
+            
+            .data
+            {
+                display: grid;
+    
+                grid-template-columns: 14px 32px 44px 8px 80px 1fr 20px 20px 60px 22px;
+                grid-template-rows: auto;
+                align-content: center;
+
+                &>.cas
+                {
+                    grid-area: 1/2/2/4;
+                    justify-self: end;
+                }
+
+                &>.typ-udalosti
+                {
+                    grid-area: 1/5/2/7;
+                    min-width: 0;
+                }
+
+                &>.cena
+                {
+                    grid-area: 1/7/2/10;
+                }
+
+                &>.additional-data
+                {
+                    grid-area: 1/5/2/10;
+                    min-width: 0;
+                }
+
+                .vaha
+                {
+                    grid-area: 1/1/2/3;
+                }
+
+                .base-link
+                {
+                    border-radius: 50%;
+                    width: 16px;
+                    color: #FFFFFF;
+                }
+
+                .green-link
+                {
+                    @extend .base-link;
+
+                    background-color: #6ABA4F;
+                }
+
+                .red-link
+                {
+                    @extend .base-link;
+
+                    background-color: #EC0E0E;
+                }
+
+                .yellow-link
+                {
+                    @extend .base-link;
+
+                    background-color: #FFB73B;
+                }
+
+                .grey-link
+                {
+                    @extend .base-link;
+
+                    background-color: #9B9B9B;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    produkt
+    {
+        .summary
+        {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: auto 1fr;
+            grid-column-gap: $pageSmWidth;
+        }
+
+        .summary-ext
+        {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: $pageSmWidth;
+        }
+
+        .summary, .summary-ext
+        {
+            .extra-small-text
+            {
+                align-self: center;
+            }
+        }
+
+        .text-danger
+        {
+            color: #EC0E0E;
+        }
+        
+        .text-success
+        {
+            color: #6ABA4F;
+        }
+    }
+
+    div.typ-prichodu
+    {
+        text-align: center;
+        width: 14px;
+        height: 14px;
+        color: $lightText;
+        font-size: 10px;
+        font-weight: bolder;
+        margin-bottom: 2px;
+        margin-top: 2px;
+
+        .orange
+        {
+            background-color: $orangeText;
+            border-radius: 50%;
+        }
+
+        .green
+        {
+            background-color: $greenText;
+            border-radius: 50%;
+        }
+
+        .blue
+        {
+            background-color: $blueText;
+            border-radius: 50%;
+        }
+
+        .grey
+        {
+            background-color: $semiDarkText;
+            border-radius: 50%;
+        }
+    }
+}

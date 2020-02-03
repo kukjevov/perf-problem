@@ -1,0 +1,503 @@
+@import '../../theme/app-theme.scss';
+
+prehlad-view.app-page, .prehlad-view.app-page
+{
+    .text-top-margin
+    {
+        margin-top: 17px;
+    }
+
+    .filter>div
+    {
+        display: flex;
+        flex-direction: row;
+
+        .typ-amb>div
+        {
+            margin-top: -2px;
+        }
+
+        .ref-tags-input
+        {
+            width: 100%;
+            margin-bottom: 1px;
+        }
+
+        .ref-tag-content
+        {
+            display: inline-block;
+        }
+
+        .default-main
+        {
+            &>.default-tag
+            {
+                margin-bottom: 1px;
+                background-color: #6ABA4F;
+            }
+
+            &>span
+            {
+                flex: 1;
+                min-width: 50px;
+            }
+        }
+
+        .medium-input-field
+        {
+            width: 13%;
+
+            .control-label.second-row
+            {
+                height: 26px;
+                line-height: 34px;
+            }
+        }
+
+        .bigger-input-field
+        {
+            width: 20.33%;
+        }
+
+        .kraj-okres
+        {
+            display: flex;
+
+            &>div
+            {
+                flex: 0 0 50%;
+                min-width: 0;
+            }
+        }
+
+        .big-input-field
+        {
+            width: 61%;
+        }
+
+        .ukazovatele
+        {
+            display: flex;
+            flex-direction: row;
+            height: 26px;
+
+            .inputs-title
+            {
+                flex: 0 0 70px;
+                min-width: 0;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .inputs
+            {
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                min-width: 0;
+
+                .ukazovatel-inputs
+                {
+                    display: flex;
+                    flex-direction: row;
+                    flex: 1;
+                    min-width: 0;
+                    padding-right: 12px;
+
+                    &.vahy-inputs
+                    {
+                        display: flex;
+                    }
+
+                    &>span
+                    {
+                        font-size: 10px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        display: block;
+                        line-height: 24px;
+                        margin-right: 4px;
+                        flex: 1;
+                        min-width: 0;
+                    }
+
+                    &>.btn-group.bootstrap-select
+                    {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        .right-aligned-select .dropdown-menu
+        {
+            left: auto;
+            right: 0;
+        }
+
+        @media screen and (max-width: 1625px)
+        {
+            .filter-btn-text
+            {
+                font-size: 8px;
+            }
+        }
+
+        @media screen and (max-width: 1325px)
+        {
+            .filter-btn-text
+            {
+                display: none;
+            }
+        }
+    }
+
+    .table
+    {
+        .header-default
+        {
+            white-space: nowrap;
+
+            &>div
+            {
+                display: flex;
+                flex-direction: row;
+
+                &>span
+                {
+                    display: block;
+
+                    &.flag
+                    {
+                        flex: 0 0 12px;
+                        align-self: center;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .indikator-header
+            {
+                width: calc(100% + 8px);
+                height: 28px;
+                top: -5px;
+                left: -5px;
+
+                &>div
+                {
+                    height: 28px;
+                    float: left;
+
+                    &.active
+                    {
+                        box-shadow: inset 0px -7px 5px -6px #5FA747;
+                    }
+
+                    &:hover
+                    {
+                        box-shadow: inset 0px -11px 4px -5px #5FA747;
+                        opacity: 0.8;
+                    }
+                }
+
+                .hodnota
+                {
+                    width: 80px;
+                }
+
+                .rozdiel
+                {
+                    width: 60px;
+                }
+
+                .vaha
+                {
+                    width: 30px;
+                }
+            }
+        }
+
+        .header-orderable:hover
+        {
+            background-color: #fff;
+            cursor: pointer;
+            box-shadow: inset 0 0 10px 1px rgb(219, 219, 219);
+        }
+
+        .header-content
+        {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 132px;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .fixed-header
+        {
+            position: fixed;
+            background-color: #E5E5E5;
+            color: #111;
+            top: 0;
+            z-index: 10;
+        }
+
+        .ukazovatel-col
+        {
+            width: 149px;
+        }
+
+        .detail-col
+        {
+            width: 40px;
+        }
+
+        .detail-pzs-col
+        {
+            width: 20px;
+        }
+
+        .urc-obdobie-refsk-col
+        {
+            width: 60px;
+        }
+
+        .border-left
+        {
+            border-left: 1px solid #cccccc;
+        }
+    }
+
+    .indikator-prehlad
+    {
+        display: flex;
+
+        .urc
+        {
+            width: 70px;
+            min-width: 0;
+            font-weight: bold;
+            margin-right: 4px;
+            text-align: right;
+        }
+
+        .urc-ref
+        {
+            width: 60px;
+            min-width: 0;
+            margin-right: $pageSmWidth;
+            text-align: right;
+        }
+
+        .vaha
+        {
+            width: 22px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 1700px)
+    {
+        .table
+        {
+            font-size: 0.9em;
+
+            .header-default
+            {
+                .indikator-header
+                {
+                    .hodnota
+                    {
+                        width: 54px;
+                    }
+
+                    .rozdiel
+                    {
+                        width: 48px;
+                    }
+
+                    .vaha
+                    {
+                        width: 18px;
+                    }
+                }
+            }
+
+            .header-content
+            {
+                max-width: 92px;
+            }
+
+            .ukazovatel-col
+            {
+                width: 110px;
+            }
+
+            .detail-col
+            {
+                width: 30px;
+            }
+
+            .detail-pzs-col
+            {
+                width: 20px;
+            }
+
+            .urc-obdobie-refsk-col
+            {
+                max-width: 40px;
+            }
+        }
+
+        .indikator-prehlad
+        {
+            .urc
+            {
+                width: 43px;
+                margin-right: 5px;
+            }
+
+            .urc-ref
+            {
+                width: 43px;
+                margin-right: 5px;
+            }
+
+            .vaha
+            {
+                width: 16px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1440px)
+    {
+        .table
+        {
+            font-size: 0.8em;
+
+            .header-default
+            {
+                .indikator-header
+                {
+                    .hodnota
+                    {
+                        width: 54px;
+                    }
+
+                    .rozdiel
+                    {
+                        width: 48px;
+                    }
+
+                    .vaha
+                    {
+                        width: 18px;
+                    }
+                }
+            }
+
+            .header-content
+            {
+                max-width: 92px;
+            }
+
+            .ukazovatel-col
+            {
+                width: 110px;
+            }
+
+            .detail-col
+            {
+                width: 30px;
+            }
+
+            .detail-pzs-col
+            {
+                width: 20px;
+            }
+
+            .urc-obdobie-refsk-col
+            {
+                max-width: 30px;
+            }
+        }
+
+        .indikator-prehlad
+        {
+            .urc
+            {
+                width: 43px;
+                margin-right: 5px;
+            }
+
+            .urc-ref
+            {
+                width: 43px;
+                margin-right: 5px;
+            }
+
+            .vaha
+            {
+                width: 16px;
+            }
+        }
+    }
+
+    .vyber-ukazovatelov
+    {
+        .skupina
+        {
+            margin-bottom: $pageSmWidth;
+            border-top: 1px solid #AAA;
+
+            .form-group
+            {
+                margin-bottom: 0px;
+                margin-left: 12px;
+            }
+        }
+    }
+
+    .utvar-col-css
+    {
+        max-width: 140px;
+        font-size: 0.85em;
+    }
+
+    .produkt-col-css
+    {
+        max-width: 140px;
+    }
+
+    rozpad-na
+    {
+        position: relative;
+
+        &, &:hover
+        {
+            text-decoration: none;
+        }
+
+        .options
+        {
+            width: 320px;
+            flex-wrap: wrap;
+            right: -38px;
+            background: #EEEEEE;
+            padding: 4px;
+            border-radius: 4px;
+            box-shadow: 0 0 2px #666;
+            z-index: 500;
+
+            a, a:hover
+            {
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+}

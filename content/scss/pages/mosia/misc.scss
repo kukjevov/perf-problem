@@ -1,0 +1,105 @@
+mosia-view, cormura-data, produkty-view, nyctalus-view, .poistenec, .with-vaha
+{
+    vaha-tag
+    {
+        @mixin weight-base
+        {
+            padding: 0px 0.5em;
+            border-radius: 12px;
+            display: inline-block;
+            color: #FFFFFF;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .weight-down
+        {
+            @include weight-base;
+            background-color: #da5c00;
+        }
+
+        .weight-x
+        {
+            @include weight-base;
+            background-color: #5bc0de;
+        }
+
+        .weight-0
+        {
+            @include weight-base;
+            background-color: #4cb03b;
+        }
+
+        .weight-1
+        {
+            @include weight-base;
+            background-color: #bbdd4f;
+        }
+
+        .weight-2
+        {
+            @include weight-base;
+            background-color: #d4da03;
+        }
+
+        .weight-3
+        {
+            @include weight-base;
+            background-color: rgb(228, 162, 86);
+        }
+
+        .weight-4
+        {
+            @include weight-base;
+            background-color: rgb(228, 85, 20);
+        }
+
+        .weight-5
+        {
+            @include weight-base;
+            background-color: #EC0E0E;
+        }
+        
+        @media print 
+        {
+            .weight-down
+            {
+                background-color: #da5c00 !important;
+            }
+    
+            .weight-x
+            {
+                background-color: #5bc0de !important;
+            }
+    
+            .weight-0
+            {
+                background-color: #4cb03b !important;
+            }
+    
+            .weight-1
+            {
+                background-color: #bbdd4f !important;
+            }
+    
+            .weight-2
+            {
+                background-color: #d4da03 !important;
+            }
+    
+            .weight-3
+            {
+                background-color: rgb(228, 162, 86) !important;
+            }
+    
+            .weight-4
+            {
+                background-color: rgb(228, 85, 20) !important;
+            }
+    
+            .weight-5
+            {
+                background-color: #EC0E0E !important;
+            }
+        }
+    }
+}

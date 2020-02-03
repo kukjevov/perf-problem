@@ -1,0 +1,56 @@
+{
+    "compilerOptions":
+    {
+        "target": "es5",
+        "module": "esnext",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": true,
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "strictNullChecks": false,
+        "moduleResolution": "node",
+        "outDir": "wwwroot/app",
+        "lib":
+        [
+            "es2016",
+            "dom"
+        ],
+        "types":
+        [
+            "node",
+            "bootstrap",
+            "jasmine",
+            "storejs",
+            "scrollmagic",
+            "highlight.js",
+            "html2canvas",
+            "konami.js"
+        ],
+        "typeRoots":
+        [
+            "node_modules/@types",
+            "node_modules/@anglr/types"
+        ],
+        "plugins":
+        [
+            {
+                "name": "@angular/language-service"
+            }
+        ]
+    },
+    "files": 
+    [
+        "config/global.d.ts"
+    ],
+    "include":
+    [
+        "app/**/*.ts"
+    ],
+    "exclude":
+    [
+        "node_modules",
+        "webWorker"
+    ]
+}

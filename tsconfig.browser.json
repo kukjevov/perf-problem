@@ -1,0 +1,30 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions":
+    {
+        "outDir": ""
+    },
+    "files":
+    [
+        "config/global.d.ts"
+    ],
+    "include":
+    [
+        "app.aot/**/*.ts"
+    ],
+    "exclude":
+    [
+        "node_modules",
+        "app",
+        "tests",
+        "karma-test-shim.ts",
+        "webWorker"
+    ],
+    "angularCompilerOptions":
+    {
+        "entryModule": "./app.aot/boot/browser-app.module#BrowserAppModule",
+        "skipMetadataEmit": true,
+        "preserveWhitespaces": true,
+        "trace": false
+    }
+}

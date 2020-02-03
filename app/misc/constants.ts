@@ -1,0 +1,14 @@
+export const EMPTY_SELECT = "";
+export const SPRING_BOOT_API = "boot/";
+export const APP_TRANSFER_ID = 'my-app-id';
+export const PREHLAD_HOSPITALIZACII_DATA_COOKIE = "PREHLAD_HOSPITALIZACII_DATA";
+export const SPOLU = "SPOLU";
+export const UNION_IS_NAME = 'MDF';
+export const VSZP_IS_NAME = 'ZPIS';
+export const VSETKY = "VSETKY";
+export const VSETCI = "VSETCI";
+export const NOTHING_SELECTED = "Nič nevybraté";
+export const STARTING_WITH_TEXT = 'Začínajúce kódom';
+export const DEBUG_INFO = 'debugInfo';
+export const NO_VALUE_CODE = 'XXXX';
+export const OPERATOR = 'OPERATOR';
