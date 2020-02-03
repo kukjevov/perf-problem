@@ -78,7 +78,7 @@
         "rxjs": "6.5.2",
         "xhr2": "0.2.0",
         "preboot": "7.0.0",
-        "jquery": "2.2.4",
+        "jquery": "3.4.1",
         "jqueryui": "1.11.1",
         "bootstrap": "3.3.7",
         "font-awesome": "4.7.0",
